@@ -1,0 +1,240 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: linear-gradient(#182c25, #306844);
+}
+
+button {
+    background-color: #2f4f4f;
+    color: #90EE90;
+    border: 1px solid #90EE90;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #90EE90;
+    color: white;
+}
+
+.logo {
+    width: 40px;
+    height: 50px;
+}
+
+.web-name {
+    color: #2ed72ef3;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    top: 11%;
+    left: 7%;
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    animation: appear 0.5s linear;;
+}
+.main-content h2 {
+    font-size: 4rem;      
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.intro-text {
+    margin-bottom: 16px;
+    font-size: 1.4rem; 
+    line-height: 1.6;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.intro-text2{
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 18%;
+    left: 68%;
+    position: absolute;
+    width: 330px;
+    height: 380px;
+    background-color: #182c25;
+    border-radius: 15px;
+    border: 3px solid #22cc3f;
+    box-shadow: 0 4px 20px #90EE90;
+    overflow: hidden;
+    z-index: 1;
+    animation: appear linear 0.5s;
+}
+
+.login-text {
+    color: #90EE90;
+    font-size: 30px;
+    font-weight: 600;
+}
+.log-box{
+    margin-bottom: 10px;
+}
+
+.link-bar {
+    gap: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    height: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    width: 270px;
+}
+
+.input-box input {
+    padding-left: 10px;
+    margin-left: 3px;
+    width: 225px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    caret-color: #90EE90;
+    color: #90EE90;
+}
+
+.input-box input:focus {
+    outline: none;
+}
+.input-box input::placeholder {
+    color: #90EE90;
+}
+.input-bar {
+    border-radius: 25px;
+    background: #2f4f4f;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.bi{
+    color: #90EE90;
+}
+.register-box {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    top: 16%;
+    left: 68%;
+    position: absolute;
+    width: 330px;
+    height: 410px;
+    background-color: #182c25;
+    border-radius: 15px;
+    border: 3px solid #22cc3f;
+    box-shadow: 0 4px 20px #90EE90;
+    overflow: hidden;
+    z-index: 1;
+    animation: appear linear 0.5s forwards;
+}
+
+.forgot-box {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    top: 27%;
+    left: 68%;
+    position: absolute;
+    width: 330px;
+    height: 280px;
+    background-color: #182c25;
+    border-radius: 15px;
+    border: 3px solid #22cc3f;
+    box-shadow: 0 4px 20px #90EE90;
+    overflow: hidden;
+    z-index: 1;
+    animation: appear linear 0.5s forwards;
+}
+@keyframes appear {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.forgot{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.forgot::hover{
+    cursor: pointer;
+    color: #2e7d32;
+}
+.popup{
+    text-align: center;
+    top: 25%;
+    left:36%;
+    z-index: 5;
+    border-radius: 20px;
+    background-color: #22cc3f;
+    position: absolute;
+    height: 180px;
+    width: 360px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px black;
+}
+.popup p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.1;
+}
+.popup-content{
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #182c25;;
+    height: 140px;
+    width: 360px;
+}
+.popup-content p{
+    color: #90EE90;
+}
+.i1{
+    z-index: 0;
+    top: 20%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.i2{
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}

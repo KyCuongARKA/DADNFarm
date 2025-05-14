@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+.overlay2 {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(135deg, #86a020, #3d6c33 );
+    z-index: 0; 
+}
+.contactBox {
+    position: absolute;
+    top: 18%;
+    left: 9%;
+    display: flex;
+    background: linear-gradient(#39652f, #3d6c33);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    height: 410px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    animation: appear 0.5s linear;
+}
+
+.contactLeft {
+    flex: 1;
+    padding: 20px;
+}
+
+.contactLeft h2 {
+    font-size: 3rem;      
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.p1 {
+    font-weight: 700;
+    font-size: 1.2rem;      
+    line-height: 1.6;
+    margin-bottom: 80px;
+    color: rgba(255,255,255,0.85);
+}
+
+.contactRight {
+    height: 350px;
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contactRight h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formRow {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contactRight form button {
+    background-color: #86a020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rice{
+    position: absolute;
+    right: 6%;
+    bottom: 5%;
+    height: 200px;
+    z-index: 4;
+    animation: appear 0.5s linear;
+}
